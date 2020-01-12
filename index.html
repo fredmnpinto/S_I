@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
+    <link
+      rel="stylesheet"
+      href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="topbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-5 ">
+              <p class="logo wow fadeInUp">Our Team</p>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="primary-navigation wow fadeIn bg-info">
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header ">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#myNavbar"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse mp0" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a id="placeName" class="active" href="#"></a></li>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li class=""><a href="https://dev.to/keyul/9-most-popular-programming-languages-to-learn-in-2020-5hnb">Top Programming Languages</a></li>
+                    <li><input id="the_text" style="margin-top:10px;" type="text" placeholder="Enter text" class="form-control" /></li>  
+                    
+                  <li> <button onclick="show_text()" class="btn bg-red" style="margin-top:10px;margin-left:5px;">Show Text</button> </li>
+                  <li> <button onclick="chnage_bg()" class="btn bg-orange" style="margin-top:10px;margin-left:5px;">Change Background Color</button> </li>
+                   
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+        <div class="container">
+<div class="jumbotron">
+ <label>who are you?</label>
+    <input type=" text" id="txtName">
+    <button class="btn btn-danger" id="btnName">Show My Name</button>
+
+</div>
+            </div>
+      <div class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6  wow slideInLeft">
+                <iframe class="slider-video"
+                        src="https://www.youtube.com/embed/GEfuOMzRgXo"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-6  wow slideInRight">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+               
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <a href="do-i-need-deliverance.html"><img src="./assets/slider/1.png"  /></a>
+                  </div>
+
+                  <div class="item">
+                    <a href="online-store.html"><img src="./assets/slider/2.jpg"  /></a>
+                  </div>
+
+                  <div class="item">
+                    <a href="online-store.html"><img src="./assets/slider/3.jpg"  /></a>
+                  </div>
+
+             
+                </div>
+
+                <!-- Left and right controls -->
+                <a
+                  class="left carousel-control"
+                  href="#myCarousel"
+                  data-slide="prev"
+                >
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#myCarousel"
+                  data-slide="next"
+                >
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="col-xs-12">
+                <button type="button" class="btn bg-blue btn-xs" data-toggle="modal" data-target="#myModal">Multiply Numbers</button>
+            </div>
+
+
+            <div class="col-xs-12">
+
+                <button style="margin-top:30px;" type="button" class="btn bg-blue" data-toggle="collapse" data-target="#demo">See Details Here</button>
+                <button class="btn btn-primary" id="btnLucky">click me to get a your lucky number number</button>
+                <div id="demo" class="collapse">
+                    <img src="./assets/slider/4.jpeg" class="img-responsive" alt="Alternate Text" />
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+               
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Multiply numbers</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/" method="post">
+                            
+                            <label>First Number</label>
+                            <input id="no1" type="text" class="form-control" name="name" value=" " />
+                            <label>Second Number</label>
+                            <input id="no2" type="text" class="form-control" name="name" value=" " />
+                            <button onclick="calculate()" type="button" class="btn bg-orange btn-xs" style="margin-top:10px;">Calculate</button>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<br>
+        <div class="container">
+    <!--Table-->
+<table id="myTable" class="table">
+<!--Table head-->
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+      <th>Visits</th>
+      <th>Age</th>
+      <th>Country</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+      <th>Visits</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <!--Table head-->
+  <!--Table body-->
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+      <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+      <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+      <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+      <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+  <!--Table body-->
+</table>
+<!--Table-->
+      </div>
+     
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 wow fadeInUp">
+              <p>Copy rights reserved | Our Team</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script>
+
+   
+    function show_text() {
+        var text = document.getElementById('the_text').value;
+        text = text + '';
+        alert(text.toUpperCase());
+    }
+
+
+    function chnage_bg() {
+        $("body").toggleClass("bg-color-1");
+    }
+
+    function calculate() {
+        var no1 = document.getElementById('no1').value;
+        var no2 = document.getElementById('no2').value;
+
+        var result = no1 * no2;
+
+        if (result < 0) {
+            result = result * -1;
+        }
+
+        alert('Absolute value: ' + result);
+
+    }
+$("#btnLucky").click(function(){
+   alert('your lucky number is '+Math.random()); 
+});
+    $("#btnName").click(function(){
+        $("#placeName").text("");
+  $("#placeName").text($("#txtName").val());
+});
+    
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+
+</script>
+
+  <script src="js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</html>
